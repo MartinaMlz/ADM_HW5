@@ -288,7 +288,6 @@ def plot_metric(graph, node, metric, figsize=(12, 10)):
         
         # Calculate the paths
         paths = dijkstra(graph, node)
-        print(paths.keys())
         # Add the edges
         for node in paths['path'].keys():
             if paths['path'][node]:
